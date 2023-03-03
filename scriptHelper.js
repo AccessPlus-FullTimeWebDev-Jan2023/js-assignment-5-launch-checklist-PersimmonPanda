@@ -43,7 +43,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
         alert("For valid input, enter a number")
     } else {
         pilotStatus.innerHTML = `Pilot ${pilot} is ready for launch`
-        copilotStatus.innerHTML = `Copilot ${copilot} is ready for launch`
+        copilotStatus.innerHTML = `Copilot ${co-pilot} is ready for launch`
     }
 
     if (fuelLevel < 10000 && cargoLevel >= 10000) {
@@ -67,7 +67,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
     } else if (fuelLevel >= 10000 && cargoLevel < 10000) {
         fuelStatus.innerHTML = "Fuel level high enough for launch";
         cargoStatus.innerHTML = "Cargo mass low enough for launch";
-        list.style.visibility = "visible";
+        list.style.visibility = "hidden";
         launchStatus.style.color = "rgb(65, 159, 106)";
         launchStatus.innerHTML = "Shuttle Ready for Launch";
     }
