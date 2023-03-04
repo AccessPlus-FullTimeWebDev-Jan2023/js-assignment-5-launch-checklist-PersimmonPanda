@@ -43,7 +43,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
         alert("For valid input, enter a number")
     } else {
         pilotStatus.innerHTML = `Pilot ${pilot} is ready for launch`
-        copilotStatus.innerHTML = `Co-pilot Bob is ready for launch`
+        copilotStatus.innerHTML = `Co-pilot ${copilot} is ready for launch`
     }
 
     if (fuelLevel < 10000 && cargoLevel >= 10000) {

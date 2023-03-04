@@ -9,6 +9,9 @@ window.addEventListener("load", function() {
     let cargoMass = document.querySelector("input[name=cargoMass]")
     let faultyItems = document.getElementById("faultyItems")
     let launchForm = document.getElementById("launchForm")
+    
+    faultyItems.style.visibility = "hidden";
+
     launchForm.addEventListener("submit", function(event) {
         event.preventDefault()
         formSubmission(window.document, faultyItems, pilotName.value, copilotName.value, fuelLevel.value, cargoMass.value)
