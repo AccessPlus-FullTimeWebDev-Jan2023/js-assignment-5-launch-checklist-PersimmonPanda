@@ -37,9 +37,9 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
 
     if (validateInput(pilot) === "Empty" || validateInput(copilot) === "Empty" || validateInput(fuelLevel) === "Empty" || validateInput(cargoLevel) === "Empty") {
         alert("Enter valid input")
-    } else if (validateInput(pilot) === "Is a number" || validateInput(copilot) === "Is a number") {
+    } else if (validateInput(pilot) === "Is a Number" || validateInput(copilot) === "Is a Number") {
         alert("For valid input, enter alphabetic characters")
-    } else if (validateInput(fuelLevel) === "Not a number" || validateInput(cargoLevel) === "Not a number") {
+    } else if (validateInput(fuelLevel) === "Not a Number" || validateInput(cargoLevel) === "Not a Number") {
         alert("For valid input, enter a number")
     } else {
         pilotStatus.innerHTML = `Pilot ${pilot} is ready for launch`
@@ -69,7 +69,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
         cargoStatus.innerHTML = "Cargo mass low enough for launch";
         list.style.visibility = "visible";
         launchStatus.style.color = "rgb(65, 159, 106)";
-        launchStatus.innerHTML = "Shuttle Ready for Launch";
+        launchStatus.innerHTML = "Shuttle is Ready for Launch";
     }
 
 }
